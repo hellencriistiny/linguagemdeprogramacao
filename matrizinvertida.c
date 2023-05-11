@@ -33,10 +33,15 @@ int main(){
 	 
 	 printf("Matriz com posicao trocada:\n");
 	 
-	 for(t=0; t<f;t++)
+	 for(t=3-1; t>=0;t--)
 	 {
-	 	printf("%d ", x[t][f]);
+	 	for (f=0;f<3;f++)
+	 	{
+	 		printf("%d ", x[t][f]);
+		}
+	 	 printf("\n");
 	 }
+	 
 	 
 	
 	
