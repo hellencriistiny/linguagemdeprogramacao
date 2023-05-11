@@ -31,7 +31,7 @@ int main(){
 		printf("\n");
 	 }
 	 
-	 printf("Matriz com posicao trocada:\n");
+	 printf("Matriz com posicao de linha trocada:\n");
 	 
 	 for(t=3-1; t>=0;t--)
 	 {
@@ -40,6 +40,17 @@ int main(){
 	 		printf("%d ", x[t][f]);
 		}
 	 	 printf("\n");
+	 }
+	 
+	 printf("Matriz com posicao da coluna trocada:\n");
+	 
+	 for(f=0;f<3;f++)
+	 {
+	 	for(t=3-1;t>=0;t--)
+	 	{
+	 	  printf("%d ", x[t][f]);
+		}
+		printf("\n");
 	 }
 	 
 	 
