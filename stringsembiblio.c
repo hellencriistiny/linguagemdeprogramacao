@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include <stdlib.h>
+
 int main()
 {
 
@@ -10,7 +13,7 @@ int main()
    printf("Qual a sua string?\n");
    gets(string);
    
-   for(i=0;i!='\0';i++)
+   for(i=0;string[i]!='\0';i++)
    {
    	
 	   vetor[i]=string[i];
