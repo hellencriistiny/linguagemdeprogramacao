@@ -43,18 +43,32 @@
 	 }
 	 return menor;
  }
+ int MediadosValores(int vetor[], int h)
+ {
+ 	float media;
+ 	for(int i=0;i<h;i++)
+ 	{
+ 		media+= vetor[i];
+ 		
+	 }
+	 media = media/h;
+	 return media;
+ }
+
  int main() 
 {
 	int TamVetor=5, maior, menor;
+	float media;
 	int vetor[TamVetor];
 	entrada (vetor,TamVetor);
 	exibir (vetor, TamVetor);
 	maior = MaiorValor (vetor, TamVetor);
 	menor = MenorValor (vetor, TamVetor);
-	
+	media = MediadosValores (vetor, TamVetor);
 	
 	printf("\nMaior valor do vetor: %d", maior);
 	printf("\nMenor valor do vetor: %d", menor);
+	printf("\nMedia dos valores: %.2f", media);
 	
 	
 }
