@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 
 
 
@@ -168,21 +169,152 @@ int main() {
 	Faca um progarama que receba o salario de um funcinario, calcule e mostre o novo salario, sabendo-se que ele recebeu um aumento de 25%
 	*/
 	 
-	 float salario, novosalario;
+	 /*float salario, novosalario;
 	 
 	 printf("Digite o salario sem reajuste: ");
 	 scanf(" %f", &salario);
 	 
 	 novosalario = salario + (salario*0.25);
 	 
-	 printf("O novo salario com reajuste:R$ %.2f\n",novosalario);
+	 printf("O novo salario com reajuste:R$ %.2f\n",novosalario);*/
 	
 	
+	/*
+	Faca um programa que reecba o salário-base de um funcionario, calcule e mostre o salario a receber, sabendo-se que esse funcionario recebe uma gatificao de 5% 
+	sobre oo salário-base e paga imposto de 7% sobre o salário-base*/
+	
+	/*float salariobase, gratsalario, impsalario, novosalario;
+	
+	printf("Digite o salario sem reajuste: ");
+	 scanf(" %f", &salariobase);
+	 
+	 gratsalario =(salariobase*0.05);
+	 impsalario = (salariobase*0.07);
+	 novosalario = salariobase + gratsalario - impsalario;
+	 
+	 printf("A gratificaco de: %.2f\n", gratsalario);
+	 printf("O imposto de: %.2f\n", impsalario);
+	 printf("O novo salario com reajuste:R$ %.2f\n",novosalario);*/
+	 
+	 
+	 //USANDO O IF
+	 
+	/* float m;
+	 
+	 printf("Insiara a nota:\n");
+	 scanf(" %f",&m);
+	 
+	 if(m >= 7.0){
+	 	printf("Aprovado(a)!\n");
+	 }*/
+	 
+	//Criando operacoes logico-relacionais
+	// - Conjuncao 
+	
+	/*float m;
+	 
+	 printf("Insiara a nota:\n");
+	 scanf(" %f",&m);
+	 
+	 if(m >= 4.0 &&/*e*/ /*m < 7.0){
+	 	printf("Tem direito a exame!\n");
+	 }*/
 	
 	
+	//- Disjuncao
 	
+	/*float m;
+	 
+	 printf("Insiara a nota:\n");
+	 scanf(" %f",&m);
+	 
+	 if(m >= 4.0 ||/*ou*/ /*m < 7.0){
+	 	printf("Tem direito a exame!\n");
+	 }*/
+	 
+	 
+	//- Inversao
 	
+	/*float m;
+	 
+	 printf("Insiara a nota:\n");
+	 scanf(" %f",&m);
+	 
+	 if(m >= 4.0 !/*não lógico*/ /*){
+	 	printf("Tem direito a exame!\n");*/
+	 	
 	
+	// USANDO O IF E O ELSE
+	
+	/*float m;
+	 
+	 printf("Insiara a nota:\n");
+	 scanf(" %f",&m);
+	 
+	 if(m >= 7.0){
+	 	printf("Aprovado(a)!\n");
+	 }
+	 else{
+	 	printf("Reprovado(a)!\n");
+	 }*/
+	 
+	 //INVERTENDO A CONDICAO
+	 
+	 /*float m;
+	 
+	 printf("Insiara a nota:\n");
+	 scanf(" %f",&m);
+	 
+	 if(m < 7.0){
+	 	printf("Reprovado(a)!\n");
+	 }
+	 else{
+	 	printf("Aprovado(a)!\n");	
+	 }*/
+	 
+	 //EXERCICIO DE IF ELSE
+	 // 1 - questao
+	 /*int abacates;
+	 float total;
+	 
+	 printf("Digite o total de abacates comprado pelo cliente: ");
+	 scanf("%d", &abacates);
+	 
+	 if(abacates <=12){
+	 	total = abacates * 1.0;
+	}
+	else if (abacates <=25){
+		total = abacates *0.90;
+	}else{
+		total = abacates * 0.75;
+	}
+	
+	printf("Abacates comprados: %d \nO valor pago pelos abacates foi: R$ %.2f\n", abacates, total);*/
+	
+	// 2 - questao
+	/*float altura, pesoideal;
+	char sexo;
+	
+	printf("Digite sua altura:");
+	scanf("%f", &altura);
+	
+	printf("Digite o sexo (F - M):");
+	scanf(" %s", &sexo);
+	
+	// || OU - onde somente uma das condicoes precisa ser verdadeira
+	// && E - onde as duas condicoes devem ser verdadeiras
+	
+	if(sexo == 'M'|| sexo == 'm'){
+		pesoideal = (72.7*altura) - 58;
+	}
+	else if(sexo =='F'|| sexo == 'f'){
+		pesoideal = (62.1*altura)-44.7;
+	}
+	else{
+		printf("Sexo digitado incorreto!!!\n");
+	}
+	
+	printf("O peso ideal: %.2f\n", pesoideal);*/
 	
 	return 0;
 }
