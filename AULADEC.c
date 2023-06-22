@@ -68,7 +68,7 @@ int main() {
 	mult = A * B;
 	divis = A / B;
 	
-	printf("Resulatados:\n");
+	printf("Resultados:\n");
 	printf("Soma: %d.\n", soma);
 	printf("Subtracao: %d.\n", subtr);
 	printf("Multiplicacao: %d.\n", mult);
