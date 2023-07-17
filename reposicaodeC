@@ -1,0 +1,74 @@
+#include <stdio.h>
+#include <ctype.h>
+
+#define MAX 100
+
+void substituirCaracteres(char matriz[MAX][MAX], int linhas, int colunas) {
+    for (int i = 0; i < linhas; i++) {
+        for (int j = 0; j < colunas; j++) {
+            // Substituir dígitos por "*"
+            if (isdigit(matriz[i][j])) {
+                matriz[i][j] = '*';
+            }
+            // Substituir letras minúsculas por "#"
+            else if (islower(matriz[i][j])) {
+                matriz[i][j] = '#';
+            }
+        }
+    }
+}
+
+void imprimirMatriz(char matriz[MAX][MAX], int linhas, int colunas) {
+    for (int i = 0; i < linhas; i++) {
+        for (int j = 0; j < colunas; j++) {
+            printf("%c ", matriz[i][j]);
+        }
+        printf("\n");
+    }
+}
+
+int main() {
+    int linhas, colunas;
+
+    printf("Digite o numero de linhas da matriz: ");
+    scanf("%d", &linhas);
+
+    printf("Digite o numero de colunas da matriz: ");
+    scanf("%d", &colunas);
+
+    // Limitando o tamanho da matriz por questões de simplificação
+    if (linhas > MAX || colunas > MAX) {
+        printf("Tamanho da matriz excede o limite.\n");
+        return 1;
+    }
+
+    char matriz[MAX][MAX];
+
+    printf("Digite os elementos da matriz:\n");
+    for (int i = 0; i < linhas; i++) {
+        for (int j = 0; j < colunas; j++) {
+            printf("Elemento [%i][%i]:", i,j);
+            scanf(" %c", &matriz[i][j]);
+        }
+    }
+
+    // Substituir os caracteres, exceto na diagonal principal
+    for (int i = 0; i < linhas; i++) {
+        for (int j = 0; j < colunas; j++) {
+            if (i != j) { // Ignorar a diagonal principal
+                if (isdigit(matriz[i][j])) {
+                    matriz[i][j] = '*';
+                } else if (islower(matriz[i][j])) {
+                    matriz[i][j] = '#';
+                }
+            }
+        }
+    }
+
+
+    // Imprimir a matriz resultante
+    printf("\nMatriz com caracteres substituidos:\n");
+    imprimirMatriz(matriz, linhas, colunas);
+
+    return 0;
+}
